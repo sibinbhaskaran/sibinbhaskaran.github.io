@@ -12,13 +12,19 @@ $(()=>{
 
 
 
-const beerData = $.ajax({
+const resPromise = $.ajax({
 
-url: queryURL
+url: queryURL,
 
 });
+resPromise.then(   (res)=>{
 
-console.log(beerData);
+console.log(res);
+
+
+
+}     )
+
 
 // const  beerRandom = () =>{
 
