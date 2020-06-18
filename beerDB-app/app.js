@@ -13,16 +13,12 @@ const dataBeers = `/beers`;
 $(()=>{
 
     
-    $('#beer').on('click', (event) => {
-         
+                    $('#beer').on('click', (event) => {
+                        
 
-        const beerName = $('#input-box').val();
-        $('#input-box').val('');
-        console.log(beerName);
-
-
-
-
+                        const beerName = $('#input-box').val();           // clicks on beer to get value and pass it resPromise function
+                        $('#input-box').val('');
+                        console.log(beerName);
 
 
 
@@ -33,15 +29,27 @@ $(()=>{
                     crossDomain: true,
                     dataType: 'json',
 
-                    url: baseURL + search + beerName + type + key
+                    url: baseURL + search + beerName + type + key                       // gets the beer details using api
     }).then((res)=>{
-       for( let i=0; i<res.data.length; i++){
+        $('.container').empty();
+       for( let i=0; i<res.data.length; i++){                                         //prints beer names, abv ,image and descrition
            console.log(res);
+           let image='';
+           let beerDescrition='';
+           if(res.data[i].labels){
+               image=res.data[i].labels.medium;
+           }
+           if(res.data[i].description){
+               beerDescrition=res.data[i].description;
+           }
                         $('.container').append(`
                         
                         <h2>${res.data[i].name}<h2>
                         <h3>Alcohol content : ${res.data[i].abv}<h3>
-                        <p>${res.data[i].description}<p>
+
+                        <img src="${image}"/>
+
+                        <p>${beerDescrition}<p>
                         
                         `)
                 
