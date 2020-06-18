@@ -1,14 +1,15 @@
 const baseURL = `https://sandbox-api.brewerydb.com/v2`;
 const search = `/search?q=`;
 
-const type =   `&type=beer`;
+//const type =   `&type=beer`;
+const type =   `&type=beer&withBreweries=Y&withLocations=y`;
 const typeBrewery = `&type=brewery&withBreweries=Y&withLocations=y`
 
 const key = `&key=c2794a49996068f02fae050e225faa50`;
   
-    http://api.brewerydb.com/v2/locations/?key=c2794a49996068f02fae050e225faa50   gives whole location
+   // http://api.brewerydb.com/v2/locations/?key=c2794a49996068f02fae050e225faa50   gives whole location
 
-    https://sandbox-api.brewerydb.com/v2/search?q=brewing&type=brewery&withBreweries=Y&withLocations=y&key=c2794a49996068f02fae050e225faa50
+   // https://sandbox-api.brewerydb.com/v2/search?q=br&type=brewery&withBreweries=Y&withLocations=y&key=c2794a49996068f02fae050e225faa50
 
 $(()=>{
 
@@ -34,6 +35,10 @@ $(()=>{
         $('.container').empty();
        for( let i=0; i<res.data.length; i++){                                         //prints beer names, abv ,image and descrition
            console.log(res);
+
+           
+           
+           
            let image='';
            let beerDescrition='';
            if(res.data[i].labels){
@@ -42,9 +47,12 @@ $(()=>{
            if(res.data[i].description){
                beerDescrition=res.data[i].description;
            }
+           
+
                         $('.container').append(`
                         
-                        <h2>${res.data[i].name}<h2>
+                        <h2>Name:${res.data[i].name}<h2>
+                        <h4>Brewery : ${res.data[i].breweries[0].name}<h4>
                         <h3>Alcohol content : ${res.data[i].abv}<h3>
 
                         <img src="${image}"/>
@@ -69,27 +77,27 @@ $(()=>{
 
      
 //const beerLocation='brewing';      
-                $('#location').on('click', (event) => {
-                        
+      $('#location').on('click', (event) => {
+                            
 
-                const beerLocation = $('#input-box').val();           // clicks on beer to get value and pass it resPromise function
-                $('#input-box').val('');
-
-
+        const beerLocation = $('#input-box').val();           // clicks on beer to get value and pass it resPromise function
+         $('#input-box').val('');
 
 
-     const resPromiseLocation = () =>{
-        $.ajax({
-        type: 'GET',
-        crossDomain: true,
-        dataType: 'json',
 
-        url: baseURL + search + beerLocation + typeBrewery + key               // gets the location details using api
-}).then((resLocation)=>{
-$('.container').empty();
-for( let i=0; i<resLocation.data.length; i++){ 
-                                            
-console.log(resLocation);
+
+        const resPromiseLocation = () =>{
+            $.ajax({
+            type: 'GET',
+            crossDomain: true,
+            dataType: 'json',
+
+            url: baseURL + search + beerLocation + typeBrewery + key               // gets the location details using api
+            }).then((resLocation)=>{
+            $('.container').empty();
+            for( let i=0; i<resLocation.data.length; i++){ 
+                                                        
+            console.log(resLocation);
           let image2='';                                              //to remove the undefined/unavailble data(images,descrition)
            let description2='';
            if(resLocation.data[i].images){
@@ -122,11 +130,6 @@ console.log(resLocation);
 } 
 resPromiseLocation();
 
-});           
-
-
-
-
-
+     });           
 
  });
