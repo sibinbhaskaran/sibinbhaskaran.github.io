@@ -1,18 +1,18 @@
 const baseURL = `https://sandbox-api.brewerydb.com/v2`;
 const search = `/search?q=`;
 
-//const type =   `&type=beer`;
 const type =   `&type=beer&withBreweries=Y&withLocations=y`;
 const typeBrewery = `&type=brewery&withBreweries=Y&withLocations=y`
 
 const key = `&key=c2794a49996068f02fae050e225faa50`;
   
-   // http://api.brewerydb.com/v2/locations/?key=c2794a49996068f02fae050e225faa50   gives whole location
 
-   // https://sandbox-api.brewerydb.com/v2/search?q=br&type=brewery&withBreweries=Y&withLocations=y&key=c2794a49996068f02fae050e225faa50
 
 $(()=>{
 
+///////////////////////////////////////////////////////////////////////////////////////
+//function  for  beer button, when clicked retrieves beer name, image description,brewery 
+////////////////////////////////////////////////////////////////////////////////////////
     
                     $('#beer').on('click', (event) => {
                         
@@ -33,9 +33,16 @@ $(()=>{
                     url: baseURL + search + beerName + type + key                       // gets the beer details using api
     }).then((res)=>{
         $('.container').empty();
+        if(res.data===undefined){
+            $('.container').append(`
+            <h2>Results not found<h2>
+            `)
+
+        }
+        else{
        for( let i=0; i<res.data.length; i++){                                         //prints beer names, abv ,image and descrition
            console.log(res);
-
+           console.log(res.data.length);
            
            
            
@@ -62,21 +69,23 @@ $(()=>{
                         `)
                 
     }
-                    }, (error) =>{
+                    }}, (error) =>{
                         console.error(error)
- 
+                    
      })
-     
+    
     } 
     resPromise();
 
  
-
+ 
      });
 
-
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+//function  for  brewery button, when clicked retrieves brewery name, image, description,location,website 
+///////////////////////////////////////////////////////////////////////////////////////////////////////
      
-//const beerLocation='brewing';      
+    
       $('#location').on('click', (event) => {
                             
 
@@ -95,6 +104,14 @@ $(()=>{
             url: baseURL + search + beerLocation + typeBrewery + key               // gets the location details using api
             }).then((resLocation)=>{
             $('.container').empty();
+            if(resLocation.data===undefined){                                     //condition to check if data search available or not 
+                $('.container').append(`
+                <h2>Results not found<h2>
+                `)
+    
+            }
+              else{
+
             for( let i=0; i<resLocation.data.length; i++){ 
                                                         
             console.log(resLocation);
@@ -122,7 +139,7 @@ $(()=>{
             `)
     
 }
-        }, (error) =>{
+        }}, (error) =>{
             console.error(error)
 
 })
