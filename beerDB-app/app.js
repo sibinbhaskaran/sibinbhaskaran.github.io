@@ -58,7 +58,7 @@ $(()=>{
 
                         $('.container').append(`
                         
-                        <h2>Name:${res.data[i].name}<h2>
+                        <h2>${res.data[i].name}<h2>
                         <h4>Brewery : ${res.data[i].breweries[0].name}<h4>
                         <h4>Alcohol content : ${res.data[i].abv}<h4>
 
