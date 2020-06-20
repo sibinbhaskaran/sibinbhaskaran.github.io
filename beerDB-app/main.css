@@ -3,6 +3,8 @@ body {
     background-image: url("../beerDB-app/background1.jpg");
     position: relative;
     background-size: contain;
+    
+    
 }
 
 
@@ -45,5 +47,30 @@ h2 {
     
 }
 
+@media(max-width:500px){
 
+    body {
+        background-image: url("../beerDB-app/background1.jpg");
+        background-size: contain;
+        
+        background-size:500px 100% ;
+    }
+
+    .buttonAll {
+       
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    #beer,#location {
+
+        background-color: transparent;
+        color:white;
+        width:30%;
+        margin-left: 80px;
+        
+    }
+
+}
 
