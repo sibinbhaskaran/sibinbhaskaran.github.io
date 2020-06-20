@@ -2,8 +2,9 @@ body {
 
     background-image: url("../beerDB-app/background1.jpg");
     position: relative;
-    background-size: contain;
     
+    background-repeat: no-repeat;
+    background-size: cover;
     
 }
 
