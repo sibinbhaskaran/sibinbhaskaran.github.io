@@ -1,10 +1,14 @@
-body {
 
+
+body {
+  width:100%;
     background-image: url("../beerDB-app/background1.jpg");
+
     position: relative;
     
     background-repeat: no-repeat;
     background-size: cover;
+    
     
 }
 
@@ -23,6 +27,7 @@ body {
 
     background-color: transparent;
     color:white;
+    cursor: pointer;
     
 }
 
@@ -51,10 +56,11 @@ h2 {
 @media(max-width:500px){
 
     body {
-        background-image: url("../beerDB-app/background1.jpg");
-        background-size: contain;
+       
+       
         
         background-size:500px 100% ;
+
     }
 
     .buttonAll {
