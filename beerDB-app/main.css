@@ -1,7 +1,7 @@
 
 
 body {
-  width:100%;
+    width:100%;
     background-image: url("../beerDB-app/background1.jpg");
 
     position: relative;
@@ -53,13 +53,16 @@ h2 {
     
 }
 
+   
 @media(max-width:500px){
 
     body {
        
-       
+       background-image: none;
+       background-color:black;
         
-        background-size:500px 100% ;
+        
+        
 
     }
 
@@ -72,12 +75,28 @@ h2 {
 
     #beer,#location {
 
-        background-color: transparent;
+        background-color: black;
         color:white;
-        width:30%;
-        margin-left: 80px;
+        width:50%;
+        margin-left: 40px;
         
     }
 
+    .container{ 
+     
+        display: grid;                              
+       background-color: transparent;
+       color:white;
+       text-shadow: 0px 0px 10px grey;
+       margin: auto;
+       overflow-y:scroll;
+       height: 300px; 
+       width: 400px;
+       padding: 100px;
+       
+       
+   } 
+
 }
+
 
