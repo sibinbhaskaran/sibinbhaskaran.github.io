@@ -1,4 +1,4 @@
-
+@media(min-width:801px){
 
 body {
     width:100%;
@@ -34,7 +34,7 @@ body {
 
  .container{ 
      
-     display: grid;                              /* puts  gap between words*/
+     display: grid;                              
     background-color: transparent;
     color:white;
     text-shadow: 0px 0px 10px grey;
@@ -51,9 +51,9 @@ h2 {
 
     text-decoration: overline underline;
     
-}
+}  
 
-   
+} 
 @media(max-width:800px){
 
     body {
@@ -61,42 +61,88 @@ h2 {
        background-image: none;
        background-color:black;
         
-        
+       
         
 
     }
+    #input-box {
+        width: auto;
+    }
 
     .buttonAll {
-        
+        position: absolute;
+  top: 5%;
+  left: 30%;
+  
         display: flex;
         flex-direction: column;
-    
+        
     }
 
     #beer,#location {
 
         background-color: black;
         color:white;
-        width:50%;
-        margin-left: 40px;
+       
         
     }
 
     .container{ 
-     
+        margin-top: 40%; 
         display: grid;                              
-       background-color: transparent;
        color:white;
        text-shadow: 0px 0px 10px grey;
-       margin: auto;
-       overflow-y:scroll;
-       height: 300px; 
-       width: 400px;
-       padding: 100px;
+       
+       
+       padding: 80px;
        
        
    } 
 
 }
 
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) {
 
+    body {
+       
+        background-image: none;
+        background-color:black;
+         
+        
+         
+ 
+     }
+     #input-box {
+         width: auto;
+     }
+ 
+     .buttonAll {
+        text-align: center;
+        padding: 100px;
+   
+         
+         
+     }
+ 
+     #beer,#location {
+ 
+         background-color: black;
+         color:white;
+        
+         
+     }
+ 
+     .container{ 
+         margin-top: 40%; 
+         display: grid;                              
+        color:white;
+        text-shadow: 0px 0px 10px grey;
+        
+        
+        padding: 80px;
+        
+        
+    } 
+  }
