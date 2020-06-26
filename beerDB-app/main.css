@@ -58,9 +58,11 @@ h2 {
 
     body {
        
-       background-image: none;
-       background-color:black;
-        
+     
+       background-image: url("../beerDB-app/background1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #1E0C08;     
        
         
 
@@ -107,8 +109,11 @@ h2 {
 
     body {
        
-        background-image: none;
-        background-color:black;
+        background-image: url("../beerDB-app/background1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #1E0C08; 
+       
          
         
          
@@ -139,8 +144,6 @@ h2 {
          display: grid;                              
         color:white;
         text-shadow: 0px 0px 10px grey;
-        
-        
         padding: 80px;
         
         
