@@ -54,7 +54,7 @@
         height: 100%;
             background-image: url("../beerDB-app/background1.jpg");
             background-repeat: no-repeat;
-            background-size: 800px 1300px;
+            background-size: 800px 1500px;
             background-color: #1E0C08;
             
         }
@@ -114,8 +114,9 @@
         body {
            
             background-image: url("../beerDB-app/background1.jpg");
-            background-size: cover;
+            
             background-repeat: no-repeat;
+            background-size: 800px 1500px;
             background-color: #1E0C08; 
            
              
