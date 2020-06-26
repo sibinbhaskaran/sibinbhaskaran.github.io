@@ -54,7 +54,7 @@ h2 {
 }
 
    
-@media(max-width:500px){
+@media(max-width:800px){
 
     body {
        
@@ -67,7 +67,7 @@ h2 {
     }
 
     .buttonAll {
-       
+        
         display: flex;
         flex-direction: column;
     
