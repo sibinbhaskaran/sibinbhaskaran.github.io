@@ -1,151 +1,155 @@
 @media(min-width:801px){
 
-body {
-    width:100%;
-    background-image: url("../beerDB-app/background1.jpg");
-
-    position: relative;
-    
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    
-}
-
-
-
-
-
-.buttonAll {
-    text-align: center;
-    padding: 100px;
-    
-    
-}
-
-#beer,#location {
-
-    background-color: transparent;
-    color:white;
-    cursor: pointer;
-    
-}
-
-
- .container{ 
-     
-     display: grid;                              
-    background-color: transparent;
-    color:white;
-    text-shadow: 0px 0px 10px grey;
-    margin: auto;
-    overflow-y:scroll;
-    height: 300px; 
-    width: 400px;
-    padding: 100px;
-    
-    
-} 
-
-h2 {
-
-    text-decoration: overline underline;
-    
-}  
-
-} 
-@media(max-width:800px){
-
-    body {
-       
-     
-       background-image: url("../beerDB-app/background1.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-color: #1E0C08;     
-       
+   body {
         
-
-    }
-    #input-box {
-        width: auto;
-    }
-
-    .buttonAll {
-        position: absolute;
-  top: 5%;
-  left: 30%;
-  
-        display: flex;
-        flex-direction: column;
-        
-    }
-
-    #beer,#location {
-
-        background-color: black;
-        color:white;
-       
-        
-    }
-
-    .container{ 
-        margin-top: 40%; 
-        display: grid;                              
-       color:white;
-       text-shadow: 0px 0px 10px grey;
-       
-       
-       padding: 80px;
-       
-       
-   } 
-
-}
-
-@media only screen 
-  and (min-device-width: 1024px) 
-  and (max-device-width: 1366px) {
-
-    body {
-       
         background-image: url("../beerDB-app/background1.jpg");
         background-size: cover;
         background-repeat: no-repeat;
-        background-color: #1E0C08; 
-       
-         
-        
-         
- 
-     }
-     #input-box {
-         width: auto;
-     }
- 
-     .buttonAll {
+        background-position: center;
+    }
+    
+   
+    .buttonAll {
         text-align: center;
         padding: 100px;
-   
-         
-         
-     }
- 
-     #beer,#location {
- 
-         background-color: black;
-         color:white;
         
-         
-     }
- 
+        
+    }
+    
+    #beer,#location {
+    
+        background-color: transparent;
+        color:white;
+        cursor: pointer;
+        
+    }
+    
+    
      .container{ 
-         margin-top: 40%; 
+         
          display: grid;                              
+        background-color: transparent;
         color:white;
         text-shadow: 0px 0px 10px grey;
-        padding: 80px;
+        margin: auto;
+        overflow-y:scroll;
+        height: 300px; 
+        width: 400px;
+        padding: 100px;
         
         
     } 
-  }
+    
+    h2 {
+    
+        text-decoration: overline underline;
+        
+    }  
+    
+    } 
+    @media(max-width:800px){
+    
+       body {
+        width: 100%;
+        height: 100%;
+            background-image: url("../beerDB-app/background1.jpg");
+            background-repeat: no-repeat;
+            background-size: 800px 1300px;
+            background-color: #1E0C08;
+            
+        }
+        #input-box {
+            width: auto;
+        }
+        
+       
+        .buttonAll {
+            position: absolute;
+            top: 10%;
+            left: 70%;
+      
+            display: flex;
+            flex-direction: column;
+            
+        }
+        
+        #beer,#location {
+        
+            background-color: transparent;
+            color:white;
+            cursor: pointer;
+            
+        }
+        
+        
+         .container{ 
+             
+             display: grid;                              
+            background-color: transparent;
+            
+            color:white;
+            text-shadow: 0px 0px 10px grey;
+            margin: auto;
+            
+            height: 300px; 
+            width: 400px;
+            padding: 200px;
+            
+            
+        } 
+        
+        h2 {
+        
+            text-decoration: overline underline;
+            
+        }  
+        
+    
+    }
+    
+    @media only screen 
+      and (min-device-width: 1024px) 
+      and (max-device-width: 1366px) { 
+   
+        body {
+           
+            background-image: url("../beerDB-app/background1.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: #1E0C08; 
+           
+             
+            
+             
+     
+         }
+         #input-box {
+             width: auto;
+         }
+     
+         .buttonAll {
+            text-align: center;
+            padding: 100px;
+       
+             
+             
+         }
+     
+         #beer,#location {
+     
+             background-color: black;
+             color:white;
+            
+             
+         }
+     
+         .container{ 
+             margin-top: 40%; 
+             display: grid;                              
+            color:white;
+            text-shadow: 0px 0px 10px grey;
+            padding: 80px;
+            
+            
+        }  
+      }
