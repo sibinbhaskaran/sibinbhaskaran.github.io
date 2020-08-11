@@ -1,3 +1,7 @@
+body {
+  background-image: url();
+}
+
 ul {
     float: right;
     list-style-type: none;
@@ -9,4 +13,19 @@ ul {
     display: inline;
     
   }
-  
+ #project {
+   width: 500px;
+   height: 500px;
+ }
+
+ #icon {
+width:30px
+ }
+
+ .container {
+   text-align: center;
+ }
+
+ .my_info, .skills, .projects,.contact {
+   
+ }
