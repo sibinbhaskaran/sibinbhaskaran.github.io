@@ -51,13 +51,16 @@ width:30px
  .intro {
    padding: 40px;
  }
-
+#home {
+  text-decoration: none;
+  text-align: right;
+}
 }
 
 
 @media only screen 
-and (min-device-width: 360px) 
-and (max-device-width: 1023px){
+and (max-device-width: 1023px) 
+and (min-device-width: 300px){
 
 html {
   scroll-behavior: smooth;
@@ -109,5 +112,8 @@ width:30px
  .intro {
    padding: 40px;
  }
-
+ #home {
+  text-decoration: none;
+  text-align: right;
+}
 }
