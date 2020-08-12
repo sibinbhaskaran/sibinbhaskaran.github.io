@@ -1,5 +1,9 @@
-body {
-  background-image: url();
+@media only screen 
+and (min-device-width: 1024px) 
+and (max-device-width: 1366px){
+
+html {
+  scroll-behavior: smooth;
 }
 
 ul {
@@ -7,15 +11,17 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    
   }
   li {
-      
+    padding: 5px;
     display: inline;
     
   }
- #project {
+ #project_img {
    width: 500px;
    height: 500px;
+   border-radius: 20px;
  }
 
  #icon {
@@ -26,6 +32,82 @@ width:30px
    text-align: center;
  }
 
- .my_info, .skills, .projects,.contact {
+
+
+ header {
+   padding:28px;
+   background-color: grey;
+   position: -webkit-sticky;
+   position: sticky;
+   top: 0;
    
  }
+
+ #info_title,#projects_h2,#skills_h2,#contact_h2 {
+  padding:28px;
+  background-color: grey;
+ }
+
+ .intro {
+   padding: 40px;
+ }
+
+}
+
+
+@media only screen 
+and (min-device-width: 360px) 
+and (max-device-width: 1023px){
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+  }
+  li {
+  
+    padding: 5px;
+    display: column;
+    
+  }
+ #project_img {
+   width: 100%;
+   height: auto;
+   border-radius: 20px;
+ }
+
+ #icon {
+width:30px
+ }
+
+ .container {
+   text-align: center;
+ }
+
+
+
+ header {
+   padding:28px;
+   background-color: grey;
+   position: -webkit-sticky;
+   position: sticky;
+   top: 0;
+   
+ }
+
+ #info_title,#projects_h2,#skills_h2,#contact_h2 {
+  padding:28px;
+  background-color: grey;
+ }
+
+ .intro {
+   padding: 40px;
+ }
+
+}

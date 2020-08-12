@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="files/bootstrap.min.css" rel="stylesheet" media="screen">
+    
     <link rel="stylesheet" href="main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" charset="utf-8"></script>
     <title>Sibin Bhaskaran</title>
 </head>
 <body>
-    <header>
+    <header id=>
     <nav>
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="">My Info</a></li>
-            <li><a href="">Projects</a></li>
+            
+            <li id="top"><a href="#info_title">My Info</a></li>
+            <li><a href="#skills_h2">Skills</a></li>
+            <li><a href="#projects_h2">Projects</a></li>
+            
             <li><a href="files/RESUME_Sibin Bhaskaran.pdf">Resume</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#contact_h2">Contact</a></li>
           </ul>
         </nav>
     </header>
@@ -27,7 +30,7 @@
     </div>
 
     <div class="my_info">
-        <h2 id=info_title>My Info</h2>
+        <h2 id="info_title">My Info</h2>
             <h3>Hello I am Sibin Bhaskaran</h3>
                 <p>
                     I am a full stack developer, and I'm very passionate and dedicated to my work and always open to learn new technologies and skills. 
@@ -45,29 +48,30 @@
     <div class="projects">
         <h2 id="projects_h2">Projects</h2>
         <section>
-                <a href="https://sibinbhaskaran.github.io/beerDB-app/index.html"><img src="files/beeddb.png" alt="" id="project"></a>
+                <a href="https://sibinbhaskaran.github.io/beerDB-app/index.html"><img src="files/beeddb.png" alt="" id="project_img"></a>
                 <p id="beer">App searches specfic beer and brewery location based on user input and renders the beer information from public  API</p>
+                
         </section>
         <section>
-                    <a href="https://carstoreinventory.herokuapp.com/"><img src="files/carinventory.png" alt="" id="project"></a>
+                    <a href="https://carstoreinventory.herokuapp.com/"><img src="files/carinventory.png" alt="" id="project_img"></a>
                     <p id="car">Car website where user can search for new car details, uploaded by website admin. User can search for used cars near by the location based on the input provided </p>
         </section>
         <section>
-                    <a href="https://carrieokey.herokuapp.com/"><img src="files/carriokey.png" alt="" id="project"></a>
+                    <a href="https://carrieokey.herokuapp.com/"><img src="files/carriokey.png" alt="" id="project_img"></a>
                     <p>This app allows a user to create a profile, add their favorite Karaoke songs, view the lyrics, and video chat with friends, allowing friends to sing their favorite songs together.</p>
         </section>
     </div>
     <div class="contact">
-        <h2 class="contact_h2">Contact</h2>
+        <h2 id="contact_h2">Contact</h2>
        <p> Email: sibinbhaskaran@gmail.com</p>
        <p> Mob: 346-971-6333</p>
        <a href="https://www.linkedin.com/in/sibin-bhaskaran-7950781b0/"><img src ="files/linkedin.png" alt="" id="icon"></a>
        <a href="https://github.com/sibinbhaskaran"><img src="files/git hub.png" alt="" id="icon"></a>
     </div>
-    <script src="files/bootstrap.min.js"></script>
+    
 </div>
 <footer>
-    
+    <a href="#top"><h4>Home</h4></a>
 </footer>
 </body>
 </html>
