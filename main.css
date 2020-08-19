@@ -55,6 +55,9 @@ width:30px
   text-decoration: none;
   text-align: right;
 }
+body{
+  border: 40px grey;
+}
 }
 
 
@@ -116,4 +119,66 @@ width:30px
   text-decoration: none;
   text-align: right;
 }
+}
+@media screen and (min-width: 1024px) and (max-height: 1310px) {
+ 
+
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  ul {
+      float: right;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      
+    }
+    li {
+      padding: 5px;
+      display: inline;
+      
+    }
+   #project_img {
+     width: 500px;
+     height: 500px;
+     border-radius: 20px;
+   }
+  
+   #icon {
+  width:30px
+   }
+  
+   .container {
+     text-align: center;
+   }
+  
+  
+  
+   header {
+     padding:28px;
+     background-color: grey;
+     position: -webkit-sticky;
+     position: sticky;
+     top: 0;
+     
+   }
+  
+   #info_title,#projects_h2,#skills_h2,#contact_h2 {
+    padding:28px;
+    background-color: grey;
+   }
+  
+   .intro {
+     padding: 40px;
+   }
+  #home {
+    text-decoration: none;
+    text-align: right;
+  }
+  body{
+    border: 40px grey;
+  }
+
 }
