@@ -58,6 +58,12 @@ width:30px
 body{
   border: 40px grey;
 }
+#profile-img {
+  padding: 20px;
+    width: 300px;
+    height: 300px;
+    border-radius: 100px;
+}
 }
 
 
@@ -119,6 +125,12 @@ width:30px
   text-decoration: none;
   text-align: right;
 }
+#profile-img {
+  padding: 20px;
+    width: 300px;
+    height: 300px;
+    border-radius: 100px;
+}
 }
 @media screen and (min-width: 1024px) and (max-height: 1310px) {
  
@@ -126,6 +138,8 @@ width:30px
 
   html {
     scroll-behavior: smooth;
+   
+   
   }
   
   ul {
@@ -179,6 +193,12 @@ width:30px
   }
   body{
     border: 40px grey;
+  }
+  #profile-img {
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    border-radius: 100px;
   }
 
 }
